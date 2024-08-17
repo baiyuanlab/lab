@@ -1,0 +1,8 @@
+/**
+ * Add Content Security Policy header
+ */
+function add_content_security_policy_header() {
+    $csp = "default-src 'self'; img-src 'self' tonny.blog;";
+    header("Content-Security-Policy: " . $csp);
+}
+add_action('send_headers', 'add_content_security_policy_header');
