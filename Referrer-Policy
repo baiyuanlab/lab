@@ -1,0 +1,1 @@
+header('Referrer-Policy: same-origin');
